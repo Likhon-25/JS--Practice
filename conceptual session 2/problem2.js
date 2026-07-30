@@ -1,6 +1,10 @@
 function generateReportCard(student) {
-    if(typeof student !== 'object' || Array.isArry(student) === true){
+    if(typeof student !== 'object' || Array.isArray(student) === true){
         return 'Invalid'
+    }
+
+    if(typeof student.bangla !== 'number' || typeof student.english !== 'number' || typeof student.math !== 'number'){
+      return 'Invalid'
     }
 
   const total = student.bangla + student.english + student.math;
