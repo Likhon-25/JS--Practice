@@ -7,4 +7,4 @@ const bookTicket = (movie, seats = 1, pricePerSeat = 300) => {
   return output;
 };
 
-console.log(bookTicket("Movie", 0, 500));
+console.log(bookTicket("Dune"));
